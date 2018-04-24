@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>用户</title>
+</head>
+<body>
+	<form method="post" action="user/register">
+	    姓名<input type="text" name="name" value="">
+		电话<input type="text" name="phone" value="">
+		性别<input type="text" name="sex" value="">
+		密码<input type="text" name="password" value="">
+		<input type="submit" value="注册">
+	</form>
+		<hr/>
+	<form method="post" action="user/login">
+		<input type="text" name="phone">
+		<input type="text"name="password">
+		<input type="submit" value="登录">
+	</form>
+	<hr/>
+	
+	<form method="post" action="user/lookInfo">
+		<input type="submit" value="查看个人信息">
+	</form>
+		<hr/>
+		
+	<form method="post" action="user/updateInfo">
+	    <input type="text" name="name" value="周鹏">
+		<input type="text" name="sex" value="男">
+		<input type="submit" value="修改个人信息">
+	</form>
+	
+		<hr/>
+	<form method="post" action="user/updatePassword">
+	    <input type="text" name="password" value="">
+		<input type="text" name="new_password" value="">
+		<input type="submit" value="修改密码">
+	</form>
+		<form method="post" action="user/listOrders">
+		<input type="submit" value="查看订单">
+	</form>
+</body>
+</html>
